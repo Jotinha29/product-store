@@ -3,6 +3,7 @@ import { Routes } from '@angular/router';
 import { LitsComponent } from './features/list/list.component';
 import { CreateComponent } from './features/create/create.component';
 
+
 export const routes: Routes = [
     {
     path: '',
@@ -10,6 +11,6 @@ export const routes: Routes = [
     },
     {
     path: 'create-product',
-    component: CreateComponent,
-    },
+    loadComponent: () =>import('./features/create/create.component').then((m) => m.CreateComponent),
+    }, 
 ];

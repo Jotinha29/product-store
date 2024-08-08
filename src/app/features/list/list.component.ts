@@ -1,15 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { ProductsService } from '../../shared/services/products.service';
-import { MatCardModule } from "@angular/material/card"
-import { MatButtonModule } from "@angular/material/button"
+import { CardComponent } from './components/card/card.component';
+
 
 @Component({
   selector: 'app-lits',
   standalone: true,
-  imports: [MatCardModule, MatButtonModule],
-  templateUrl: './lits.component.html',
-  styleUrl: './lits.component.css'
+  imports: [CardComponent],
+  templateUrl: './list.component.html',
+  styleUrl: './list.component.css'
 })
 export class LitsComponent {
 

@@ -4,6 +4,7 @@ import { ProductsService } from '../../shared/services/products.service';
 import { CardComponent } from './components/card/card.component';
 import { Router, RouterLink } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
+import { Product } from '../../shared/interfaces/product.interface';
 
 
 @Component({
@@ -26,7 +27,7 @@ export class LitsComponent {
     });
   }
 
-  onEdit(){
-      this.router.navigateByUrl('/edit-product');
+  onEdit(product: Product){
+      this.router.navigate(['/edit-product', product.id]);
   }
 }

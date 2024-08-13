@@ -3,15 +3,15 @@ import { ProductsService } from '../../shared/services/products.service';
 import { CardComponent } from './components/card/card.component';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
-import { MatDialog } from '@angular/material/dialog';
 import { Product } from '../../shared/interfaces/product.interface';
 import { filter } from 'rxjs';
 import { ConfirmationDialogService } from '../../shared/services/confirmation-dialog.service';
+import { NoItemsComponent } from './components/no-items/no-items.component';
 
 @Component({
   selector: 'app-lits',
   standalone: true,
-  imports: [CardComponent, RouterLink, MatButtonModule],
+  imports: [CardComponent, RouterLink, MatButtonModule, NoItemsComponent],
   templateUrl: './list.component.html',
   styleUrl: './list.component.css'
 })

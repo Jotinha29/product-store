@@ -1,32 +1,12 @@
 {
   "products": [
     {
-      "title": "produto teste EDITADASSOO",
+      "title": "Camisa",
       "id": "1"
     },
     {
-      "title": "PRODUTAO editado",
-      "id": "76b6"
-    },
-    {
-      "title": "Refri editado",
-      "id": "0b1c"
-    },
-    {
-      "id": "bf50",
-      "title": "Suco"
-    },
-    {
-      "id": "7831",
-      "title": "Chocolate"
-    },
-    {
-      "id": "3292",
-      "title": "Energatico"
-    },
-    {
-      "id": "f68a",
-      "title": "Salgadin"
+      "id": "9b4f",
+      "title": "Sapato"
     }
   ]
 }

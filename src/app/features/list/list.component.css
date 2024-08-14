@@ -1,5 +1,10 @@
-.action-cointainer {
+.action-container {
     display: flex;
     justify-content: flex-end;
     padding: 16px 0;
+}
+
+.item-container {
+    display: block;
+    margin-bottom: 16px;
 }
